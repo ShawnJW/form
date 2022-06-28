@@ -1,0 +1,371 @@
+body {
+    margin: 0;
+}
+
+.main {
+    max-width: 1440px;
+}
+
+.hero {
+    background-image: url("form-bg.jpeg");
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 550px;
+}
+
+.hero img {
+    margin: 55px 0 0 80px;
+}
+
+.hero h1 {
+    max-width: 423px;
+    margin: 228px 0 0 80px;
+    font: normal 700 40px/45px Neue Montreal, sans-serif;
+}
+
+.hero span:nth-child(3n) {
+    float: right;
+    background: #fff;
+    width: 304px;
+    height: 550px;
+    clip-path: polygon(0 0, 0% 100%, 55% 100%);
+    border: 1px solid #fff;
+}
+
+.hero span:nth-child(2) {
+    float: right;
+    width: 400px;
+    background-image: url("Pattern.jpeg");
+    height: 550px;
+    clip-path: polygon(84% 0, 100% 0, 100% 100%, 40% 100%);
+}
+
+section.form-container {
+    margin-top: 70px;
+}
+
+form.form {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: end;
+    justify-content: center;
+}
+
+label {
+    display: flex;
+    padding-bottom: 15px;
+    font: normal 500 11px/16px Nobile, sans-serif;
+}
+
+
+input, select, button {
+    border: 1px solid #C2C9D1;
+    border-radius: 12px;
+    margin-right: 34px;
+    width: 235px;
+    height: 40px;
+}
+
+input {
+    height: 35px;
+    padding-left: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    padding-left: 3px;
+}
+
+select {
+    color: #000;
+    padding-left: 3px;
+    font: normal 400 13px/20px Nobile, sans-serif;
+
+}
+
+select:invalid,
+select option[value=""] {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+button {
+    margin-right: 0;
+    max-width: 191px;
+    background-color: #006FFF;
+    color: #fff;
+    font: normal 500 15px/20px Neue Montreal, sans-serif;
+    border: none;
+
+}
+
+section#thank-you {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #C4C4C4;
+    width: 50%;
+    border-radius: 12px;
+    margin: 0 auto;
+    padding: 45px 109px;
+}
+
+section#thank-you img {
+    padding-right: 54px;
+}
+
+section#thank-you h3 {
+    font: normal 700 20px/25px Source Sans, sans-serif;
+}
+
+section#thank-you p {
+    font: normal 400 16px/26px Nobile, sans-serif;
+    max-width: 521px;
+}
+
+#thank-you, .hero-mobile {
+    display: none;
+}
+
+.privacy-policy {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: end;
+    justify-content: center;
+    margin-top: 57px;
+}
+
+.privacy-policy a {
+    color: #000;
+    font: normal 400 14px/20px Nobile, sans-serif;
+
+}
+@media (min-width: 801px) and (max-width: 1026px) {
+
+    .hero {
+        background-size: contain;
+        height: 413px;
+    }
+
+    .hero h1 {
+        font: normal 700 30px/35px Neue Montreal, sans-serif !important;
+        margin: 80px 0 0 80px;
+    }
+
+    .hero span:nth-child(2) {
+        height: 413px;
+    }
+
+    .hero span:nth-child(3n) {
+        width: 102px;
+        height: 413px;
+    }
+
+    input, select, button {
+        width: 130px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 800px) {
+
+    form.form {
+        flex-direction: row;
+        align-items: end;
+    }
+
+    input, select, button {
+        width: 130px !important;
+    }
+
+    .hero {
+        background-size: contain;
+        height: 413px;
+    }
+
+    .hero span:nth-child(2) {
+        height: 413px;
+    }
+
+    .hero span:nth-child(3n) {
+        width: 100px;
+        height: 413px;
+    }
+
+    .hero h1 {
+        font: normal 700 30px/35px Neue Montreal, sans-serif !important;
+        margin: 80px 0 0 80px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .hero {
+        height: 468px;
+    }
+
+    .hero h1{
+        font: normal 700 38px/43px Neue Montreal, sans-serif;
+        margin: 80px 0 0 80px;
+    }
+
+    .hero-mobile {
+        display: block;
+    }
+
+    .hero-mobile span:first-child {
+        float: right;
+        background-image: url("Pattern.jpeg");
+        background-repeat: no-repeat;
+        height: 413px;
+        clip-path: polygon(84% 0, 100% 0, 100% 100%, 40% 100%);
+        width: 85%;
+        background-size: cover;
+
+    }
+
+    .hero-mobile {
+        background-image: url("form-bg.jpeg");
+        background-position: 79% 5%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 413px;
+
+    }
+
+    .hero-mobile img {
+
+    }
+
+    section.hero {
+        background-image: none;
+    }
+
+    .hero img {
+        margin: 55px 0 0 13px;
+    }
+
+    section.hero span:first-child {
+        height: 20px;
+    }
+
+    section.hero h1 {
+        max-width: 335px;
+        margin-top: 130px;
+        margin-left: -105px;
+        margin-right: 0;
+        text-align: left;
+        justify-content: center;
+    }
+
+    .hero span:nth-child(2n), .hero span:nth-child(3n) {
+        display: none;
+    }
+
+    section.form-container {
+        max-width: 330px;
+        margin-top: 26px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    label {
+        margin: 5px 0 -2px 0;
+        padding-bottom: 0;
+    }
+
+    .form input, .form select {
+        margin: 5px 0;
+    }
+
+    button {
+        margin: 10px 0;
+        max-width: none;
+    }
+
+    form.form {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    section.hero {
+        display: flex;
+    }
+
+    input, select, button {
+        width: 100%;
+    }
+
+    .privacy-policy {
+        margin-top: 20px;
+    }
+
+    section#thank-you {
+        display: none;
+        width: 335px;
+        padding: 25px 19px;
+    }
+}
+
+/* Ipad Landscape */
+@media only screen
+and (min-device-width: 1024px)
+and (max-device-width: 1366px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+    .hero h1 {
+        font: normal 700 38px/40px Neue Montreal, sans-serif;
+        margin: 80px 0 0 80px;
+    }
+
+    input, select, button {
+        width: 155px;
+    }
+}
+
+/* Phone Landscape*/
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape) {
+
+    .hero {
+        background-size: contain;
+        height: 413px;
+    }
+
+    .hero span:nth-child(2) {
+        width: 329px;
+        height: 413px;
+    }
+
+    .hero span:nth-child(3n) {
+        width: 171px;
+        height: 450px;
+    }
+
+    .hero h1 {
+        font: normal 700 30px/35px Neue Montreal, sans-serif;
+        margin: 80px 0 0 80px;
+    }
+
+    form.form {
+        flex-flow: inherit;
+    }
+
+    input, select, button {
+        width: 135px;
+    }
+
+    section#thank-you p {
+        max-width: 600px;
+    }
+}
